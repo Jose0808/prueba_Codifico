@@ -1,0 +1,74 @@
+[
+  {
+    "ContainingType": "SalesPredictionAPI.Controllers.CustomersController",
+    "Method": "GetSalesPredictions",
+    "RelativePath": "api/customers/sales-prediction",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesPredictionAPI.Controllers.EmployeesController",
+    "Method": "GetEmployees",
+    "RelativePath": "api/employees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesPredictionAPI.Controllers.OrdersController",
+    "Method": "AddNewOrder",
+    "RelativePath": "api/orders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newOrder",
+        "Type": "SalesPredictionAPI.Domain.DTOs.NewOrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesPredictionAPI.Controllers.OrdersController",
+    "Method": "GetOrdersByCustomer",
+    "RelativePath": "api/orders/{customerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesPredictionAPI.Controllers.ProductsController",
+    "Method": "GetProducts",
+    "RelativePath": "api/products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesPredictionAPI.Controllers.ShippersController",
+    "Method": "GetShippers",
+    "RelativePath": "api/shippers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
