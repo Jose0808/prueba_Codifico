@@ -1,22 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
-import { MatToolbar } from '@angular/material/toolbar'
-
+import { MatToolbarModule } from '@angular/material/toolbar'
+import { AppRoutingModule } from './app-routing.module';
+import { CustomersComponent } from './features/customers/customers.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        CustomersComponent,
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule,
         HttpClientModule,
-        ReactiveFormsModule,
-        MatToolbar
+        MatToolbarModule,
+        AppRoutingModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatButtonModule,
+        MatToolbarModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

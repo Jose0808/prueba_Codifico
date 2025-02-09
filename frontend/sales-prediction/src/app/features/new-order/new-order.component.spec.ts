@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NewOrderComponent } from './new-order-modal.component';
+import { NewOrderModalComponent } from './new-order-modal.component';
 
-describe('NewOrderComponent', () => {
-  let component: NewOrderComponent;
-  let fixture: ComponentFixture<NewOrderComponent>;
+describe('NewOrderModalComponent', () => {
+  let component: NewOrderModalComponent;
+  let fixture: ComponentFixture<NewOrderModalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [NewOrderComponent]
+      declarations: [NewOrderModalComponent]
     })
       .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NewOrderComponent);
+    fixture = TestBed.createComponent(NewOrderModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

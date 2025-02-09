@@ -1,46 +1,35 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
-import { MatSort } from '@angular/material/sort';
-import { MatTableDataSource } from '@angular/material/table';
+import { Component, OnInit } from '@angular/core';
+import { CustomerService } from 'src/app/services/customers.service';
+import { Customer } from 'src/app/shared/models/customer.model';
+import { CustomersModule } from './customers.module';
 
 @Component({
     selector: 'app-sales-date-prediction',
-    templateUrl: './customers.component.html'
+    templateUrl: './customers.component.html',
+    styleUrl: './customers.component.scss'
 })
-export class CustomerComponent implements OnInit {
+
+export class CustomersComponent implements OnInit {
     displayedColumns: string[] = ['customerName', 'lastOrderDate', 'nextPredictedOrder', 'actions'];
-    dataSource = new MatTableDataSource<Customer>(CUSTOMER_DATA);
+    customers: CustomersModule[] = [];
 
-    @ViewChild(MatPaginator) paginator!: MatPaginator;
-    @ViewChild(MatSort) sort!: MatSort;
+    constructor(private customerService: CustomerService) { }
 
-    ngOnInit() {
-        this.dataSource.paginator = this.paginator;
-        this.dataSource.sort = this.sort;
-    }
-
-    applyFilter(event: Event) {
-        const filterValue = (event.target as HTMLInputElement).value;
-        this.dataSource.filter = filterValue.trim().toLowerCase();
+    ngOnInit(): void {
+        this.customerService.getSalesPrediction().subscribe({
+            next: (data) => {
+                console.log('Data received:', data);
+                this.customers = data;
+            },
+            error: (error) => console.error('Error fetching customers:', error),
+        });
     }
 
     viewOrders(customer: Customer) {
         console.log('Viewing orders for', customer);
     }
 
-    createOrder(customer: Customer) {
+    newOrder(customer: Customer) {
         console.log('Creating new order for', customer);
     }
 }
-
-export interface Customer {
-    customerName: string;
-    lastOrderDate: Date;
-    nextPredictedOrder: Date;
-}
-
-const CUSTOMER_DATA: Customer[] = [
-    { customerName: 'Customer AHPOP', lastOrderDate: new Date('2008-02-04'), nextPredictedOrder: new Date('2008-03-23') },
-    { customerName: 'Customer AHXHT', lastOrderDate: new Date('2008-05-05'), nextPredictedOrder: new Date('2008-08-09') },
-    // Agrega más datos según sea necesario...
-];

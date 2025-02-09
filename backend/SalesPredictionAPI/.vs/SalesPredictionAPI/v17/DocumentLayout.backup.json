@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Jose\\Codifico\\prueba_Codifico\\backend\\SalesPredictionAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{003ECF72-39CB-4AB0-8FBB-B26CB3B77BE2}|SalesPredictionAPI.csproj|d:\\jose\\codifico\\prueba_codifico\\backend\\salespredictionapi\\domain\\dtos\\salespredictiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{003ECF72-39CB-4AB0-8FBB-B26CB3B77BE2}|SalesPredictionAPI.csproj|solutionrelative:domain\\dtos\\salespredictiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{003ECF72-39CB-4AB0-8FBB-B26CB3B77BE2}|SalesPredictionAPI.csproj|d:\\jose\\codifico\\prueba_codifico\\backend\\salespredictionapi\\salespredictionapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{003ECF72-39CB-4AB0-8FBB-B26CB3B77BE2}|SalesPredictionAPI.csproj|solutionrelative:salespredictionapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{003ECF72-39CB-4AB0-8FBB-B26CB3B77BE2}|SalesPredictionAPI.csproj|d:\\jose\\codifico\\prueba_codifico\\backend\\salespredictionapi\\salespredictionapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{003ECF72-39CB-4AB0-8FBB-B26CB3B77BE2}|SalesPredictionAPI.csproj|solutionrelative:salespredictionapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,16 +27,8 @@
       "RelativeMoniker": "D:0:0:{003ECF72-39CB-4AB0-8FBB-B26CB3B77BE2}|SalesPredictionAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{003ECF72-39CB-4AB0-8FBB-B26CB3B77BE2}|SalesPredictionAPI.csproj|d:\\jose\\codifico\\prueba_codifico\\backend\\salespredictionapi\\infrastructure\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{003ECF72-39CB-4AB0-8FBB-B26CB3B77BE2}|SalesPredictionAPI.csproj|solutionrelative:infrastructure\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{003ECF72-39CB-4AB0-8FBB-B26CB3B77BE2}|SalesPredictionAPI.csproj|d:\\jose\\codifico\\prueba_codifico\\backend\\salespredictionapi\\salespredictionapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{003ECF72-39CB-4AB0-8FBB-B26CB3B77BE2}|SalesPredictionAPI.csproj|solutionrelative:salespredictionapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{003ECF72-39CB-4AB0-8FBB-B26CB3B77BE2}|SalesPredictionAPI.csproj|d:\\jose\\codifico\\prueba_codifico\\backend\\salespredictionapi\\salespredictionapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{003ECF72-39CB-4AB0-8FBB-B26CB3B77BE2}|SalesPredictionAPI.csproj|solutionrelative:salespredictionapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,19 +43,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SalesPredictionDto.cs",
+              "DocumentMoniker": "D:\\Jose\\Codifico\\prueba_Codifico\\backend\\SalesPredictionAPI\\Domain\\DTOs\\SalesPredictionDto.cs",
+              "RelativeDocumentMoniker": "Domain\\DTOs\\SalesPredictionDto.cs",
+              "ToolTip": "D:\\Jose\\Codifico\\prueba_Codifico\\backend\\SalesPredictionAPI\\Domain\\DTOs\\SalesPredictionDto.cs*",
+              "RelativeToolTip": "Domain\\DTOs\\SalesPredictionDto.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T03:58:31.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "D:\\Jose\\Codifico\\prueba_Codifico\\backend\\SalesPredictionAPI\\SalesPredictionAPI\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "SalesPredictionAPI\\Controllers\\OrdersController.cs",
               "ToolTip": "D:\\Jose\\Codifico\\prueba_Codifico\\backend\\SalesPredictionAPI\\SalesPredictionAPI\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "SalesPredictionAPI\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAmwBoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-08T04:43:58.085Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "NewOrderDto.cs",
               "DocumentMoniker": "D:\\Jose\\Codifico\\prueba_Codifico\\backend\\SalesPredictionAPI\\Domain\\DTOs\\NewOrderDto.cs",
               "RelativeDocumentMoniker": "Domain\\DTOs\\NewOrderDto.cs",
@@ -67,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Jose\\Codifico\\prueba_Codifico\\backend\\SalesPredictionAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -79,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Jose\\Codifico\\prueba_Codifico\\backend\\SalesPredictionAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -91,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "D:\\Jose\\Codifico\\prueba_Codifico\\backend\\SalesPredictionAPI\\SalesPredictionAPI\\Middlewares\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "SalesPredictionAPI\\Middlewares\\ExceptionMiddleware.cs",
@@ -103,27 +116,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CustomerRepository.cs",
-              "DocumentMoniker": "D:\\Jose\\Codifico\\prueba_Codifico\\backend\\SalesPredictionAPI\\Infrastructure\\Repositories\\CustomerRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\CustomerRepository.cs",
-              "ToolTip": "D:\\Jose\\Codifico\\prueba_Codifico\\backend\\SalesPredictionAPI\\Infrastructure\\Repositories\\CustomerRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\CustomerRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T23:14:49.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "CustomersController.cs",
               "DocumentMoniker": "D:\\Jose\\Codifico\\prueba_Codifico\\backend\\SalesPredictionAPI\\SalesPredictionAPI\\Controllers\\CustomersController.cs",
               "RelativeDocumentMoniker": "SalesPredictionAPI\\Controllers\\CustomersController.cs",
               "ToolTip": "D:\\Jose\\Codifico\\prueba_Codifico\\backend\\SalesPredictionAPI\\SalesPredictionAPI\\Controllers\\CustomersController.cs",
               "RelativeToolTip": "SalesPredictionAPI\\Controllers\\CustomersController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBMAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T22:57:31.656Z"
+              "WhenOpened": "2025-02-07T22:57:31.656Z",
+              "EditorCaption": ""
             }
           ]
         }
