@@ -1,7 +1,7 @@
 <table mat-table [dataSource]="customers" class="mat-elevation-z8">
   <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Name </th>
-    <td mat-cell *matCellDef="let customer"> {{customer.name}} </td>
+    <th mat-header-cell *matHeaderCellDef> Customer Name </th>
+    <td mat-cell *matCellDef="let customer"> {{customer.customerName}} </td>
   </ng-container>
 
   <ng-container matColumnDef="lastOrderDate">
@@ -10,8 +10,8 @@
   </ng-container>
 
   <ng-container matColumnDef="nextOrderPrediction">
-    <th mat-header-cell *matHeaderCellDef> Next Order Prediction </th>
-    <td mat-cell *matCellDef="let customer"> {{customer.nextOrderPrediction}} </td>
+    <th mat-header-cell *matHeaderCellDef> Next Predicter Order </th>
+    <td mat-cell *matCellDef="let customer"> {{customer.nextPredictedOrder}} </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="['name', 'lastOrderDate', 'nextOrderPrediction']"></tr>

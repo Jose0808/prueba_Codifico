@@ -4,9 +4,9 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
 export interface Customer {
-    CustomerName: string;
-    LastOrderDate: Date;
-    NextPredictedOrder: Date;
+    customerName: string;
+    lastOrderDate: Date;
+    nextPredictedOrder: Date;
 }
 
 @Injectable({

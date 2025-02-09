@@ -3,9 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms'; 
-import { MatDialogModule } from '@angular/material/dialog';
-import { MatTableModule } from '@angular/material/table';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatToolbar } from '@angular/material/toolbar'
 
 
 @NgModule({
@@ -13,12 +12,11 @@ import { MatTableModule } from '@angular/material/table';
         AppComponent
     ],
     imports: [
-        MatDialogModule,
-        MatTableModule,
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        MatToolbar
     ],
     providers: [],
     bootstrap: [AppComponent]
