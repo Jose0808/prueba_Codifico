@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { NewOrderService } from '../new-order/services/new-order.service';
 
 @Component({
@@ -9,11 +9,11 @@ import { NewOrderService } from '../new-order/services/new-order.service';
 })
 export class NewOrderModalComponent {
   loading = true;
-  orderForm: FormGroup;
+  orderForm: UntypedFormGroup;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: { customerId: string },
-    private fb: FormBuilder,
+    private fb: UntypedFormBuilder,
     private dialogRef: MatDialogRef<NewOrderModalComponent>,
     private ordersService: NewOrderService
   ) {
