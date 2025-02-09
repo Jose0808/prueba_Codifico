@@ -1,0 +1,16 @@
+<form [formGroup]="orderForm" (ngSubmit)="submitOrder()">
+    <label for="product">Product:</label>
+    <input id="product" formControlName="product" required />
+    <div *ngIf="orderForm.get('product')?.invalid && orderForm.get('product')?.touched">
+        Product is required.
+    </div>
+
+    <label for="quantity">Quantity:</label>
+    <input id="quantity" type="number" formControlName="quantity" required />
+    <div *ngIf="orderForm.get('quantity')?.invalid && orderForm.get('quantity')?.touched">
+        Quantity must be at least 1.
+    </div>
+
+    <button type="submit" [disabled]="loading || orderForm.invalid">Submit</button>
+    <div *ngIf="loading">Submitting...</div>
+</form>
