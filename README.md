@@ -34,7 +34,7 @@ DBSetup.sql
 DBStoredProcedures.sql
 -- Aquí se crean las tablas y los Stored Procedures
 
-3️⃣ Ejecutar el Backend (.NET Core)
+## 3️⃣ Ejecutar el Backend (.NET Core)
 🔹 Requisitos: Tener instalado .NET 8 SDK.
 
 Navegar al directorio del backend:
@@ -63,7 +63,7 @@ dotnet test
 ```
 
 
-4️⃣ Ejecutar el Frontend (Angular 17+)
+## 4️⃣ Ejecutar el Frontend (Angular 17+)
 🔹 Requisitos: Tener instalado Node.js 18+ y Angular CLI.
 
 Navegar al directorio del frontend:
@@ -85,7 +85,7 @@ ng serve --open
 
 ---
 
-Vanilla Javascript, Cómo Funciona?
+## Vanilla Javascript, Cómo Funciona?
 El usuario ingresa números enteros separados por comas en el input.
 Al presionar "Update Data", se validan los datos y se genera un gráfico de barras.
 Cada barra tiene un color diferente (máximo 5 colores alternativos).
@@ -93,7 +93,7 @@ Los valores de las barras se muestran arriba de cada una.
 
 ----
 
-🛠 Tecnologías Utilizadas
+ 🛠 Tecnologías Utilizadas
 🔹 Backend: .NET Core 8, Dapper
 🔹 Frontend: Angular 17+, Angular Material, D3.js
 🔹 Base de Datos: SQL Server
