@@ -24,6 +24,7 @@ Este es un proyecto de **Full Stack** que permite gestionar predicciones de vent
 ```sh
 git clone https://github.com/Jose0808/prueba_Codifico.git
 cd sales-prediction
+```
 2️⃣ Configurar la Base de Datos (SQL Server)
 🔹 Requisitos: Tener instalado SQL Server y SQL Server Management Studio (SSMS).
 
@@ -37,32 +38,49 @@ DBStoredProcedures.sql
 🔹 Requisitos: Tener instalado .NET 8 SDK.
 
 Navegar al directorio del backend:
+```sh
 cd backend/SalesPredictionAPI
+```
 Restaurar paquetes y compilar el proyecto:
+```sh
 dotnet restore
 dotnet build
+```
 Configurar la cadena de conexión en appsettings.json:
 "ConnectionStrings": {
   "DefaultConnection": "Server=localhost;Database=SalesPredictionDB;Trusted_Connection=True;"
 }
 Ejecutar la API:
+```sh
 dotnet run
+```
 💡 La API estará disponible en: http://localhost:7045/api
+
+Ejecutar Pruebas en el Backend:
+```sh
+cd backend/SalesPredictionAPI.Tests
+dotnet test
+```
+
 
 4️⃣ Ejecutar el Frontend (Angular 17+)
 🔹 Requisitos: Tener instalado Node.js 18+ y Angular CLI.
 
 Navegar al directorio del frontend:
+```sh
 cd frontend/sales-prediction
 Instalar las dependencias:
 npm install
+```
 Configurar la URL del backend en src/environments/environment.ts:
 export const environment = {
   production: false,
   apiUrl: 'http://localhost:7045/api'
 };
 Ejecutar la aplicación:
+```sh
 ng serve --open
+```
 💡 El frontend estará disponible en: http://localhost:4200
 
 ---
