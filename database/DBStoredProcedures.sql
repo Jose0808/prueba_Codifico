@@ -15,6 +15,7 @@ BEGIN
     SET NOCOUNT ON;
 
     SELECT 
+		c.custid AS CustomerId,
         c.contactname AS CustomerName,
         MAX(o.orderdate) AS LastOrderDate,
         DATEADD(DAY, AVG(DATEDIFF(DAY, prevOrders.orderdate, o.orderdate)), MAX(o.orderdate)) AS NextPredictedOrder
@@ -22,7 +23,7 @@ BEGIN
     JOIN Sales.Customers c ON o.custid = c.custid
     LEFT JOIN Sales.Orders prevOrders 
         ON prevOrders.custid = o.custid AND prevOrders.orderdate < o.orderdate
-    GROUP BY c.contactname;
+    GROUP BY c.custid, c.contactname;
 END;
 GO
 
@@ -91,6 +92,7 @@ GO
 -- Create procedure usp_AddNewOrder
 
 CREATE PROCEDURE usp_AddNewOrder
+     @CustomerID INT,
     ----order
     @EmpID INT,
     @ShipperID INT,
@@ -115,8 +117,8 @@ BEGIN
 
 	BEGIN TRY
     -- Insertar la orden
-    INSERT INTO Sales.Orders (empid, shipperid, shipname, shipaddress, shipcity, shipcountry, orderdate, requireddate, shippeddate, freight)
-    VALUES (@EmpID, @ShipperID, @ShipName, @ShipAddress, @ShipCity, @ShipCountry, @OrderDate, @RequiredDate, @ShippedDate, @Freight);
+    INSERT INTO Sales.Orders (custid, empid, shipperid, shipname, shipaddress, shipcity, shipcountry, orderdate, requireddate, shippeddate, freight)
+    VALUES (@CustomerID , @EmpID, @ShipperID, @ShipName, @ShipAddress, @ShipCity, @ShipCountry, @OrderDate, @RequiredDate, @ShippedDate, @Freight);
 
     -- Obtener el ID de la orden recién insertada
     SET @OrderID = SCOPE_IDENTITY();

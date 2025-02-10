@@ -6,12 +6,12 @@ export interface NewOrder {
     shipAddress: string;
     shipCity: string;
     shipCountry: string;
-    orderDate: string;
-    requiredDate: string;
-    shippedDate: string;
+    orderDate: Date;
+    requiredDate: Date;
+    shippedDate: Date;
     freight: number;
     productId: number;
     unitPrice: number;
-    quantity: number;
+    qty: number;
     discount: number;
 }

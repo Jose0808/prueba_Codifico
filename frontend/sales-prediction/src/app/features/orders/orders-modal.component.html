@@ -1,19 +1,38 @@
-<h2 mat-dialog-title>Orders for Customer</h2>
+<div class="headerModal">
+    <h2 mat-dialog-title>Customer {{ customer.customerName }} - Orders</h2>
+</div>
 <mat-dialog-content>
-    <table mat-table [dataSource]="orders" class="mat-elevation-z8">
+    <table mat-table [dataSource]="orders" matSort>
         <ng-container matColumnDef="orderId">
-            <th mat-header-cell *matHeaderCellDef>Order ID</th>
-            <td mat-cell *matCellDef="let order">{{ order.id }}</td>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Order ID</th>
+            <td mat-cell *matCellDef="let order">{{ order.orderId }}</td>
         </ng-container>
-        <ng-container matColumnDef="date">
-            <th mat-header-cell *matHeaderCellDef>Order Date</th>
-            <td mat-cell *matCellDef="let order">{{ order.date }}</td>
+        <ng-container matColumnDef="RequiredDate">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Required Date</th>
+            <td mat-cell *matCellDef="let order">{{ order.requiredDate | date: 'dd/MM/yyyy h:mm:ss a' }}</td>
         </ng-container>
+        <ng-container matColumnDef="shippedDate">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Shipped Date</th>
+            <td mat-cell *matCellDef="let order">{{ order.shippedDate | date: 'dd/MM/yyyy h:mm:ss a' }}</td>
 
-        <tr mat-header-row *matHeaderRowDef="['orderId', 'date']"></tr>
-        <tr mat-row *matRowDef="let row; columns: ['orderId', 'date'];"></tr>
+        </ng-container>
+        <ng-container matColumnDef="shipName">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Ship Name</th>
+            <td mat-cell *matCellDef="let order">{{ order.shipName }}</td>
+        </ng-container>
+        <ng-container matColumnDef="shipAddress">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Ship Address</th>
+            <td mat-cell *matCellDef="let order">{{ order.shipaddress }}</td>
+        </ng-container>
+        <ng-container matColumnDef="shipCity">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Ship City</th>
+            <td mat-cell *matCellDef="let order">{{ order.shipcity }}</td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
+    <mat-paginator [pageSize]="10" [pageSizeOptions]="[10, 25, 30]"></mat-paginator>
 </mat-dialog-content>
-<mat-dialog-actions>
-    <button mat-button (click)="dialogRef.close()">Close</button>
+<mat-dialog-actions align="end">
+    <button mat-button (click)="dialogRef.close()" color="warn">Close</button>
 </mat-dialog-actions>

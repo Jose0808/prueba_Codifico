@@ -118,7 +118,7 @@
           "freight",
           "orderDate",
           "productID",
-          "quantity",
+          "qty",
           "requiredDate",
           "shipAddress",
           "shipCity",
@@ -183,7 +183,7 @@
             "type": "number",
             "format": "double"
           },
-          "quantity": {
+          "qty": {
             "type": "integer",
             "format": "int32"
           },
