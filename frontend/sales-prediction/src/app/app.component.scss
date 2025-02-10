@@ -1,0 +1,35 @@
+.custom-toolbar {
+    display: flex;
+    /* Usa flexbox para el layout */
+    justify-content: space-between;
+    /* Distribuye los elementos con espacio entre ellos */
+    align-items: center;
+    /* Centra verticalmente los elementos */
+    background-color: #000;
+    /* Fondo negro */
+    color: #fff;
+    /* Texto blanco */
+    padding: 0 16px;
+    /* Espaciado horizontal */
+}
+
+.logo {
+    height: 40px;
+    /* Ajusta el tamaño del logo */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el logo */
+}
+
+.headerModal {
+    background-color: #ff0000;
+    /* Fondo negro */
+    color: #fff;
+    /* Texto blanco */
+}
+
+.headerModalGreen {
+    background-color: #00d034;
+    /* Fondo negro */
+    color: #fff;
+    /* Texto blanco */
+}
