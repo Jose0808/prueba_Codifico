@@ -25,7 +25,7 @@ Este es un proyecto de **Full Stack** que permite gestionar predicciones de vent
 git clone https://github.com/Jose0808/prueba_Codifico.git
 cd sales-prediction
 ```
-2️⃣ Configurar la Base de Datos (SQL Server)
+## 2️⃣ Configurar la Base de Datos (SQL Server)
 🔹 Requisitos: Tener instalado SQL Server y SQL Server Management Studio (SSMS).
 
 Abrir DBSetup.sql en SSMS.
